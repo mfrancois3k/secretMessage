@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated1</title>
+    <style>
+        body{
+           counter-reset: increment-count;
+            
+        }
+        
+        p {
+          counter-increment: increment-count;
+            outline-style: solid;
+            display: block;
+            text-align: center;
+            padding: 30px 10px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        
+        p:after {
+         content: " " counter(increment-count) " "; 
+           
+        }
+        
+        p:hover:after {
+            content: attr(data-content);
+            padding: 20px;
+        }
+        
+        h1{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 50px;
+            text-align: center;
+            line-height: 2;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This Secret message <br>is for u</h1>
+
+    <p title="This project is for u" data-content=""> this message is for u baby</p>
+    
+    <p title="You push me to code everyday" data-content=""> this message is for u baby</p>
+    <p title="Im so thankful your in my life baby" data-content=""> this message is for u baby</p>
+    <p title="You are my muse and my everything" data-content=""> this message is for u baby</p>
+    <p title="This project is for u" data-content=""> this message is for u baby</p>
+</body>
+</html>
